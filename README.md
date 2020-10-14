@@ -5,3 +5,8 @@ The Hi-Lo number guessing game implemented in several languages
 ```
 ./hilo.sh <language>
 ```
+
+### Available Implementations
+- Go
+- Python
+- Rust
