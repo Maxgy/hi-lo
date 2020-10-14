@@ -16,12 +16,12 @@ while True:
     guess = 0
 
     for attempt in range(1, 8):
-        print("Guess a number (1-100): ", end="")
+        print("Guess #" + str(attempt) + " (1-100): ", end="")
         guess = int(input())
         if guess < answer:
-            print("Too low")
+            print("Too low.")
         elif guess > answer:
-            print("Too high")
+            print("Too high.")
         else:
             break
         attempt += 1
@@ -29,7 +29,7 @@ while True:
     if guess == answer:
         print("Correct! You win!")
     else:
-        print("Sorry, you lost.")
+        print("Sorry, you lost. The correct number was " + str(answer) + ".")
 
     print("\nWould you like to play again? (y/n): ", end="")
     choice = input()
