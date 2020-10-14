@@ -10,7 +10,7 @@ import (
 	"time"
 )
 
-func main() {
+func hilo() {
 	for {
 		fmt.Println("\nWelcome to Hi-Lo! The rules are simple: you have 7 tries to guess a number 1-100.")
 		fmt.Println("If your guess is too low, I'll say 'Too low'; if your guess is too high, I'll say 'Too high'.")
@@ -56,4 +56,9 @@ func main() {
 			break
 		}
 	}
+
+}
+
+func main() {
+	hilo()
 }
