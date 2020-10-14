@@ -1,2 +1,7 @@
 # hi-lo
 The Hi-Lo number guessing game implemented in several languages
+
+### Usage
+```
+./hilo.sh <language>
+```
