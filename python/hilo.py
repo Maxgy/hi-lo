@@ -16,8 +16,14 @@ while True:
     guess = 0
 
     for attempt in range(1, 8):
-        print("Guess #" + str(attempt) + " (1-100): ", end="")
-        guess = int(input())
+        while True:
+            print("Guess #" + str(attempt) + " (1-100): ", end="")
+            try:
+                guess = int(input())
+            except:
+                continue
+            if guess >= 1 and guess <= 100:
+                break
         if guess < answer:
             print("Too low.")
         elif guess > answer:
