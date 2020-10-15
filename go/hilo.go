@@ -24,9 +24,9 @@ func hilo() {
 		guess := 0
 		var err error
 		guessStr := ""
-		for i := 0; i < 7; i++ {
+		for attempt := 1; attempt <= 7; attempt++ {
 			for {
-				fmt.Print("\nGuess #" + strconv.Itoa(i+1) + " (1-100): ")
+				fmt.Printf("\nGuess #%v (1-100): ", attempt)
 				guessStr, _ = reader.ReadString('\n')
 				guess, err = strconv.Atoi(strings.Trim(guessStr, "\n"))
 				if guessStr != "\n" && err == nil && guess >= 1 && guess <= 100 {
@@ -45,7 +45,7 @@ func hilo() {
 		if guess == answer {
 			fmt.Println("You win!")
 		} else {
-			fmt.Println("You lost. The correct number was " + strconv.Itoa(answer) + ".")
+			fmt.Printf("You lost. The correct number was %v.\n")
 		}
 
 		fmt.Print("Would you like to play again? (y/n): ")
