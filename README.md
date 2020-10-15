@@ -7,6 +7,7 @@ The Hi-Lo number guessing game implemented in several languages
 ```
 
 ## Available Implementations
+- C#
 - Go
 - Python
 - Rust

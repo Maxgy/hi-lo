@@ -3,6 +3,9 @@
 echo "$1 Hi-Lo:"
 
 case $1 in
+    "cs"|"csharp"|"c-sharp"|"dotnet")
+	(cd c-sharp && dotnet run)
+	;;
     "go")
         (cd go && go run hilo.go)
         ;;
