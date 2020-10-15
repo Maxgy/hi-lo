@@ -14,13 +14,9 @@ fn hilo() {
     let mut rng = rand::thread_rng();
 
     loop {
-        println!(
-            "\nWelcome to Hi-Lo! The rules are simple: you have 7 tries to guess a number 1-100."
-        );
-        println!(
-        "If your guess is too low, I'll say \'Too low\'; if your guess is too high, I'll say \'Too high\'."
-    );
-        println!("If you guess correctly, you win!\n");
+        println!("\nWelcome to Hi-Lo! The rules are simple: you have 7 tries to guess a number 1-100.\n\
+            If your guess is too low, I'll say \'Too low\'; if your guess is too high, I'll say \'Too high\'.\n\
+            If you guess correctly, you win!\n");
 
         let answer = rng.gen_range(1, 101);
 
@@ -33,11 +29,10 @@ fn hilo() {
                 let input = read_line();
 
                 if let Ok(n) = input.parse() {
-                    guess = n;
-                }
-
-                if guess >= 1 && guess <= 100 {
-                    break;
+                    if n >= 1 && n <= 100 {
+                        guess = n;
+                        break;
+                    }
                 }
             }
 

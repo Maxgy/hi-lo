@@ -1,3 +1,6 @@
+# Clang
+*.out
+
 # C-Sharp
 c-sharp/bin
 c-sharp/obj

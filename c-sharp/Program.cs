@@ -10,13 +10,9 @@ namespace HiLo
 
             while (true)
             {
-                Console.WriteLine(
-                    "\nWelcome to Hi-Lo! The rules are simple: you have 7 tries to guess a number 1-100."
-                );
-                Console.WriteLine(
-                    "If your guess is too low, I'll say \'Too low\'; if your guess is too high, I'll say \'Too high\'."
-                );
-                Console.WriteLine("If you guess correctly, you win!\n");
+                Console.WriteLine("\nWelcome to Hi-Lo! The rules are simple: you have 7 tries to guess a number 1-100.\n" +
+                    "If your guess is too low, I'll say \'Too low\'; if your guess is too high, I'll say \'Too high\'.\n" +
+                    "If you guess correctly, you win!\n");
 
                 int answer = rand.Next(1, 101);
 

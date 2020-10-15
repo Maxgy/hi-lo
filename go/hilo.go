@@ -33,6 +33,7 @@ func hilo() {
 					break
 				}
 			}
+
 			if guess > answer {
 				fmt.Println("Too high.")
 			} else if guess < answer {
@@ -45,7 +46,7 @@ func hilo() {
 		if guess == answer {
 			fmt.Println("You win!")
 		} else {
-			fmt.Printf("You lost. The correct number was %v.\n")
+			fmt.Printf("You lost. The correct number was %v.\n", answer)
 		}
 
 		fmt.Print("Would you like to play again? (y/n): ")
