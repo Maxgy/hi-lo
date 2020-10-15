@@ -6,11 +6,7 @@ The Hi-Lo number guessing game implemented in several languages
 ./hilo.sh <language>
 ```
 
-### Note:
-JavaScript is invoked with either `deno` or `node`.
-
 ## Available Implementations
 - Go
-- JavaScript
 - Python
 - Rust

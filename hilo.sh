@@ -6,10 +6,10 @@ case $1 in
     "go")
         (cd go && go run hilo.go)
         ;;
-    "python")
+    "python"|"py")
         (cd python && python hilo.py)
         ;;
-    "rust")
+    "rust"|"rs")
         (cd rust && cargo run)
         ;;
     *)
