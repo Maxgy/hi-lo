@@ -7,7 +7,7 @@ The Hi-Lo number guessing game implemented in several languages
 ```
 
 ## Available Implementations
-- C#
-- Go
-- Python
-- Rust
+- [C#](https://github.com/Maxgy/hi-lo/blob/main/c-sharp/Program.cs)
+- [Go](https://github.com/Maxgy/hi-lo/blob/main/go/hilo.go)
+- [Python](https://github.com/Maxgy/hi-lo/blob/main/python/hilo.py)
+- [Rust](https://github.com/Maxgy/hi-lo/blob/main/rust/src/main.rs)
