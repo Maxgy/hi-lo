@@ -12,6 +12,7 @@ The Hi-Lo number guessing game implemented in several languages
 - [Go](https://github.com/Maxgy/hi-lo/blob/main/go/hilo.go)
 - [JavaScript](https://github.com/Maxgy/hi-lo/blob/main/js/hilo.js)
 - [Python](https://github.com/Maxgy/hi-lo/blob/main/python/hilo.py)
+- [Ruby](https://github.com/Maxgy/hi-lo/blob/main/ruby/hilo.rb)
 - [Rust](https://github.com/Maxgy/hi-lo/blob/main/rust/src/main.rs)
 - [Swift](https://github.com/Maxgy/hi-lo/blob/main/swift/hilo.swift)
 
@@ -26,8 +27,9 @@ The Hi-Lo number guessing game implemented in several languages
  Rust                    1           63           52            0           11
  JavaScript              1           44           37            0            7
  Swift                   1           44           37            0            7
+ Ruby                    1           46           36            1            9
  Python                  1           45           33            2           10
 ===============================================================================
- Total                   7          398          331            2           65
+ Total                   8          444          367            3           74
 ===============================================================================
 ```

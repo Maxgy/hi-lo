@@ -50,7 +50,7 @@ void hilo() {
                       << std::endl;
         }
 
-        std::cout << "Would you like to play again? (y/n):";
+        std::cout << "Would you like to play again? (y/n): ";
         std::string choice;
         std::getline(std::cin, choice);
         if (choice != "y") {

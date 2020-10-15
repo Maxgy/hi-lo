@@ -18,6 +18,9 @@ case $1 in
     "python"|"py")
         (cd python && python hilo.py)
         ;;
+    "ruby"|"rb")
+        (cd ruby && ruby hilo.rb)
+        ;;
     "rust"|"rs")
         (cd rust && cargo run)
         ;;
