@@ -21,6 +21,9 @@ case $1 in
     "rust"|"rs")
         (cd rust && cargo run)
         ;;
+    "swift")
+        (cd swift && swift hilo.swift)
+        ;;
     *)
         echo "Sorry, language not found."
         echo "Available languages:"

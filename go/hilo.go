@@ -23,11 +23,10 @@ func hilo() {
 
 		guess := 0
 		var err error
-		guessStr := ""
 		for attempt := 1; attempt <= 7; attempt++ {
 			for {
 				fmt.Printf("\nGuess #%v (1-100): ", attempt)
-				guessStr, _ = reader.ReadString('\n')
+				guessStr, _ := reader.ReadString('\n')
 				guess, err = strconv.Atoi(strings.Trim(guessStr, "\n"))
 				if guessStr != "\n" && err == nil && guess >= 1 && guess <= 100 {
 					break
@@ -51,8 +50,7 @@ func hilo() {
 
 		fmt.Print("Would you like to play again? (y/n): ")
 		choice, _ := reader.ReadString('\n')
-		choice = strings.Trim(choice, "\n")
-		if choice != "y" {
+		if strings.Trim(choice, "\n") != "y" {
 			print("Thanks for playing!")
 			break
 		}

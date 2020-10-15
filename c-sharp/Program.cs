@@ -56,8 +56,7 @@ namespace HiLo
                 }
 
                 Console.Write("Would you like to play again? (y/n): ");
-                string choice = Console.ReadLine();
-                if (choice != "y")
+                if (Console.ReadLine() != "y")
                 {
                     Console.WriteLine("Thanks for playing!");
                     break;

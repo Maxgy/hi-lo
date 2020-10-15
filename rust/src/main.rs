@@ -26,9 +26,7 @@ fn hilo() {
                 print!("Guess #{} (1-100): ", attempt);
                 io::stdout().flush().expect("Error flushing stdout");
 
-                let input = read_line();
-
-                if let Ok(n) = input.parse() {
+                if let Ok(n) = read_line().parse() {
                     if n >= 1 && n <= 100 {
                         guess = n;
                         break;
@@ -53,8 +51,7 @@ fn hilo() {
 
         print!("Would you like to play again? (y/n): ");
         io::stdout().flush().expect("Error flushing stdout");
-        let choice = read_line();
-        if choice != "y" {
+        if read_line() != "y" {
             println!("Thanks for playing!");
             break;
         }

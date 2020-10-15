@@ -34,8 +34,7 @@ function hilo() {
       alert(`You lost. The correct number was ${answer}.`);
     }
 
-    let choice = prompt("Would you like to play again? (y/n): ");
-    if (choice != "y") {
+    if (prompt("Would you like to play again? (y/n): ") != "y") {
       alert("Thanks for playing!");
       break;
     }
