@@ -14,6 +14,7 @@ The Hi-Lo number guessing game implemented in several languages
 - [Rust](https://github.com/Maxgy/hi-lo/blob/main/rust/src/main.rs)
 
 ## SLOC
+```
 ===============================================================================
  Language            Files        Lines         Code     Comments       Blanks
 ===============================================================================
@@ -30,3 +31,4 @@ The Hi-Lo number guessing game implemented in several languages
 ===============================================================================
  Total                  10          370          298           15           57
 ===============================================================================
+```
