@@ -23,13 +23,12 @@ func hilo() {
             } else if guess > answer {
                 print("Too high.")
             } else {
+                print("You win!");
                 break
             }
         }
 
-        if guess == answer {
-            print("You win!")
-        } else {
+        if guess != answer {
             print("You lost. The correct number was \(answer).")
         }
 

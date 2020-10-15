@@ -24,13 +24,12 @@ function hilo() {
       } else if (guess > answer) {
         alert("Too high.");
       } else {
+        alert("You win!");
         break;
       }
     }
 
-    if (guess == answer) {
-      alert("You win!");
-    } else {
+    if (guess != answer) {
       alert(`You lost. The correct number was ${answer}.`);
     }
 

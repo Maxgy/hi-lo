@@ -39,13 +39,12 @@ void hilo() {
             } else if (guess > answer) {
                 std::cout << "Too high." << std::endl;
             } else {
+                std::cout << "You win!" << std::endl;
                 break;
             }
         }
 
-        if (guess == answer) {
-            std::cout << "You win!" << std::endl;
-        } else {
+        if (guess != answer) {
             std::cout << "You lost. The correct number was " << answer << "."
                       << std::endl;
         }

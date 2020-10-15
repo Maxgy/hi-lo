@@ -39,13 +39,12 @@ fn hilo() {
             } else if guess > answer {
                 println!("Too high.");
             } else {
+                println!("You win!");
                 break;
             }
         }
 
-        if guess == answer {
-            println!("You win!");
-        } else {
+        if guess != answer {
             println!("You lost. The correct number was {}.", answer);
         }
 

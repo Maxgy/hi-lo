@@ -25,13 +25,12 @@ def hilo
       elsif guess > answer
         puts "Too high."
       else
+        puts "You win!"
         break
       end
     end
 
-    if guess == answer
-      puts "You win!"
-    else
+    if guess != answer
       puts "You lost. The correct answer was #{answer}."
     end
 

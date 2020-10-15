@@ -29,11 +29,10 @@ def hilo():
             elif guess > answer:
                 print("Too high.")
             else:
+                print("Correct! You win!")
                 break
 
-        if guess == answer:
-            print("Correct! You win!")
-        else:
+        if guess != answer:
             print(f"Sorry, you lost. The correct number was {answer}.")
 
         print("\nWould you like to play again? (y/n): ", end="")

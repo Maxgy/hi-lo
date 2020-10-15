@@ -41,16 +41,13 @@ namespace HiLo
                     }
                     else
                     {
+                        Console.WriteLine("You win!");
                         break;
                     }
 
                 }
 
-                if (guess == answer)
-                {
-                    Console.WriteLine("You win!");
-                }
-                else
+                if (guess != answer)
                 {
                     Console.WriteLine($"You lost. The correct number was {answer}.");
                 }
