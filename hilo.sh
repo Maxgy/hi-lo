@@ -12,6 +12,9 @@ case $1 in
     "go")
         (cd go && go run hilo.go)
         ;;
+    "java")
+        (cd java && javac Hilo.java && java Hilo)
+        ;;
     "js"|"javascript")
         echo "https://maxgy.github.io/hi-lo/"
         ;;
