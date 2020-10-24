@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
-class Main
+class Hilo
 {
     public static void Game()
     {

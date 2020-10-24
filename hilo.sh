@@ -33,11 +33,13 @@ case $1 in
     *)
         echo "Sorry, language not found."
         echo "Available languages:"
-        echo "c-sharp"
         echo "c++"
+        echo "c-sharp"
         echo "go"
+        echo "java"
         echo "javascript"
         echo "python"
+        echo "ruby"
         echo "rust"
         ;;
 esac

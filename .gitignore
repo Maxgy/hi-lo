@@ -6,7 +6,7 @@ c-sharp/bin
 c-sharp/obj
 
 # Java
-java/Hilo.class
+java/*.class
 
 # Python
 python/__pycache__
