@@ -41,5 +41,6 @@ case $1 in
         echo "python"
         echo "ruby"
         echo "rust"
+	echo "swift"
         ;;
 esac
