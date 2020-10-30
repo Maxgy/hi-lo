@@ -18,6 +18,9 @@ case $1 in
     "js"|"javascript")
         echo "https://maxgy.github.io/hi-lo/"
         ;;
+    "php")
+        (cd php && php hilo.php)
+        ;;
     "python"|"py")
         (cd python && python hilo.py)
         ;;
@@ -38,6 +41,7 @@ case $1 in
         echo "go"
         echo "java"
         echo "javascript"
+        echo "php"
         echo "python"
         echo "ruby"
         echo "rust"
