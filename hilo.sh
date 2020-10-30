@@ -3,6 +3,9 @@
 echo "$1 Hi-Lo:"
 
 case $1 in
+    "c")
+        (cd c && clang hilo.c && ./a.out)
+        ;;
     "c++"|"cpp"|"cxx")
         (cd cxx && clang++ hilo.cxx && ./a.out)
         ;;
@@ -36,6 +39,7 @@ case $1 in
     *)
         echo "Sorry, language not found."
         echo "Available languages:"
+        echo "c"
         echo "c++"
         echo "c-sharp"
         echo "go"

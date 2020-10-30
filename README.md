@@ -7,8 +7,9 @@ The Hi-Lo number guessing game implemented in several languages
 ```
 
 ## Available Implementations
-- [C#](https://github.com/Maxgy/hi-lo/blob/main/c-sharp/Program.cs)
+- [C](https://github.com/Maxgy/hi-lo/blob/main/c/hilo.c)
 - [C\+\+](https://github.com/Maxgy/hi-lo/blob/main/cxx/hilo.cxx)
+- [C#](https://github.com/Maxgy/hi-lo/blob/main/c-sharp/Program.cs)
 - [Go](https://github.com/Maxgy/hi-lo/blob/main/go/hilo.go)
 - [Java](https://github.com/Maxgy/hi-lo/blob/main/java/hilo.java)
 - [JavaScript](https://github.com/Maxgy/hi-lo/blob/main/js/hilo.js)
@@ -27,6 +28,7 @@ The Hi-Lo number guessing game implemented in several languages
  C#                      1           69           60            0            9
  C++                     1           66           55            0           11
  Go                      1           62           52            0           10
+ C                       1           62           51            0           11
  Rust                    1           62           51            0           11
  PHP                     1           44           38            0            6
  JavaScript              1           43           36            0            7
@@ -34,6 +36,6 @@ The Hi-Lo number guessing game implemented in several languages
  Ruby                    1           45           35            1            9
  Python                  1           44           32            2           10
 ===============================================================================
- Total                  10          550          457            3           90
+ Total                  11          612          508            3          101
 ===============================================================================
 ```
