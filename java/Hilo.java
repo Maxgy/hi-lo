@@ -24,13 +24,13 @@ class Hilo
                     try
                     {  
                         guess = Integer.parseInt(scan.nextLine());
+                        if (guess >= 1 && guess <= 100)
+                        {
+                            break;
+                        }
                     }
                     catch (NumberFormatException e)
-                    {} 
-                    if (guess >= 1 && guess <= 100)
-                    {
-                        break;
-                    }
+                    {}
                 }
 
                 if (guess < answer)

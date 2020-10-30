@@ -21,6 +21,9 @@ case $1 in
     "js"|"javascript")
         echo "https://maxgy.github.io/hi-lo/"
         ;;
+    "kt"|"kotlin")
+        (cd kotlin && kotlinc -d hilo.jar hilo.kt && kotlin -classpath hilo.jar MainKt)
+        ;;
     "php")
         (cd php && php hilo.php)
         ;;
@@ -45,10 +48,11 @@ case $1 in
         echo "go"
         echo "java"
         echo "javascript"
+        echo "kotlin"
         echo "php"
         echo "python"
         echo "ruby"
         echo "rust"
-	      echo "swift"
+	    echo "swift"
         ;;
 esac
