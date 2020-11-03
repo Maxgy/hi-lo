@@ -12,6 +12,9 @@ case $1 in
     "cs"|"csharp"|"c-sharp"|"dotnet")
 	    (cd c-sharp && dotnet run)
 	    ;;
+    "dart")
+        (cd dart && dart hilo.dart)
+        ;;
     "go")
         (cd go && go run hilo.go)
         ;;
@@ -48,6 +51,7 @@ case $1 in
         echo "c"
         echo "c++"
         echo "c-sharp"
+        echo "dart"
         echo "go"
         echo "java"
         echo "javascript"
