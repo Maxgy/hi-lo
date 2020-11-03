@@ -24,6 +24,9 @@ case $1 in
     "kt"|"kotlin")
         (cd kotlin && kotlinc -d hilo.jar hilo.kt && kotlin -classpath hilo.jar MainKt)
         ;;
+    "lua")
+        (cd lua && luajit hilo.lua)
+        ;;
     "php")
         (cd php && php hilo.php)
         ;;
@@ -49,6 +52,7 @@ case $1 in
         echo "java"
         echo "javascript"
         echo "kotlin"
+        echo "lua"
         echo "php"
         echo "python"
         echo "ruby"

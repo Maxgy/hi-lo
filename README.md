@@ -14,6 +14,7 @@ The Hi-Lo number guessing game implemented in several languages
 - [Java](https://github.com/Maxgy/hi-lo/blob/main/java/hilo.java)
 - [JavaScript](https://github.com/Maxgy/hi-lo/blob/main/js/hilo.js)
 - [Kotlin](https://github.com/Maxgy/hi-lo/blob/main/js/Hilo.kt)
+- [Lua](https://github.com/Maxgy/hi-lo/blob/main/lua/hilo.lua)
 - [PHP](https://github.com/Maxgy/hi-lo/blob/main/php/hilo.php)
 - [Python](https://github.com/Maxgy/hi-lo/blob/main/python/hilo.py)
 - [Ruby](https://github.com/Maxgy/hi-lo/blob/main/ruby/hilo.rb)
