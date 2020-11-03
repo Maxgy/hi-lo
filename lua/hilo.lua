@@ -12,9 +12,9 @@ function hilo()
         for attempt = 1, 7, 1 do
             while true do
                 io.write(string.format("Guess #%s (1-100): ", attempt))
-                input = io.read()
-                if tonumber(input) ~= nil then
-                    guess = tonumber(input)
+                input = tonumber(io.read())
+                if input ~= nil then
+                    guess = input
                     if guess >= 1 and guess <= 100 then
                         break
                     end
