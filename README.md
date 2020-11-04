@@ -10,6 +10,7 @@ The Hi-Lo number guessing game implemented in several languages
 - [C](https://github.com/Maxgy/hi-lo/blob/main/c/hilo.c)
 - [C\+\+](https://github.com/Maxgy/hi-lo/blob/main/cxx/hilo.cxx)
 - [C#](https://github.com/Maxgy/hi-lo/blob/main/c-sharp/Program.cs)
+- [D](https://github.com/Maxgy/hi-lo/blob/main/d/hilo.d)
 - [Dart](https://github.com/Maxgy/hi-lo/blob/main/dart/hilo.dart)
 - [Go](https://github.com/Maxgy/hi-lo/blob/main/go/hilo.go)
 - [Java](https://github.com/Maxgy/hi-lo/blob/main/java/hilo.java)
