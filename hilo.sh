@@ -10,8 +10,8 @@ case $1 in
         (cd cxx && clang++ hilo.cxx && ./a.out)
         ;;
     "cs"|"csharp"|"c-sharp"|"dotnet")
-	    (cd c-sharp && dotnet run)
-	    ;;
+        (cd c-sharp && dotnet run)
+        ;;
     "d")
         (cd d && dmd hilo.d && ./hilo)
         ;;
