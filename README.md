@@ -1,12 +1,15 @@
 # hi-lo
+
 The Hi-Lo number guessing game implemented in several languages
 
 ## Usage
+
 ```
 ./hilo.sh <language>
 ```
 
 ## Available Implementations
+
 - [C](https://github.com/Maxgy/hi-lo/blob/main/c/hilo.c)
 - [C\+\+](https://github.com/Maxgy/hi-lo/blob/main/cxx/hilo.cxx)
 - [C#](https://github.com/Maxgy/hi-lo/blob/main/c-sharp/Program.cs)
@@ -24,6 +27,7 @@ The Hi-Lo number guessing game implemented in several languages
 - [Swift](https://github.com/Maxgy/hi-lo/blob/main/swift/hilo.swift)
 
 ## SLOC
+
 ```
 ===============================================================================
  Language            Files        Lines         Code     Comments       Blanks
@@ -41,8 +45,8 @@ The Hi-Lo number guessing game implemented in several languages
  JavaScript              1           43           36            0            7
  Swift                   1           43           36            0            7
  Ruby                    1           45           35            1            9
- Python                  1           44           32            2           10
+ Python                  1           42           30            2           10
 ===============================================================================
- Total                  14          752          624            3          125
+ Total                  15          750          622            3          125
 ===============================================================================
 ```

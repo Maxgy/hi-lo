@@ -16,9 +16,8 @@ def hilo():
 
         for attempt in range(1, 8):
             while True:
-                print(f"Guess #{attempt} (1-100): ", end="")
                 try:
-                    guess = int(input())
+                    guess = int(input(f"Guess #{attempt} (1-100): ").strip())
                     if guess >= 1 and guess <= 100:
                         break
                 except:
@@ -35,8 +34,7 @@ def hilo():
         if guess != answer:
             print(f"Sorry, you lost. The correct number was {answer}.")
 
-        print("\nWould you like to play again? (y/n): ", end="")
-        if input() != "y":
+        if input("\nWould you like to play again? (y/n): ") != "y":
             print("Thanks for playing!")
             break
 

@@ -2,7 +2,7 @@ fmt:
     (cd c && clang-format -i -style="{IndentWidth: 4}" *.c)
     (cd cxx && clang-format -i -style="{IndentWidth: 4}" *.cxx)
     (cd c-sharp && dotnet-format)
-    (cd go && go fmt)
+    (cd go && go fmt ./*)
     (deno fmt)
     (yapf -ir python)
     (cd rust && cargo fmt)
