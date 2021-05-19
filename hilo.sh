@@ -25,7 +25,7 @@ case $1 in
         (cd java && javac Hilo.java && java Hilo)
         ;;
     "js"|"javascript")
-        echo "https://maxgy.github.io/hi-lo/"
+        echo "https://zaechus.github.io/hi-lo/"
         ;;
     "kt"|"kotlin")
         (cd kotlin && kotlinc -d hilo.jar hilo.kt && kotlin -classpath hilo.jar MainKt)
