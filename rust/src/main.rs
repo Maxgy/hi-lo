@@ -1,8 +1,14 @@
-use std::io::{self, Write};
+use std::{
+    cmp::Ordering,
+    io::{self, Write},
+};
 
 use rand::prelude::*;
 
-fn read_line() -> String {
+fn read_line(prompt: &str) -> String {
+    print!("{}", prompt);
+    io::stdout().flush().expect("Error flushing stdout");
+
     let mut input = String::new();
     io::stdin()
         .read_line(&mut input)
@@ -11,36 +17,31 @@ fn read_line() -> String {
 }
 
 fn hilo() {
-    let mut rng = rand::thread_rng();
-
     loop {
         println!("\nWelcome to Hi-Lo! The rules are simple: you have 7 tries to guess a number 1-100.\n\
             If your guess is too low, I'll say \'Too low\'; if your guess is too high, I'll say \'Too high\'.\n\
             If you guess correctly, you win!\n");
 
-        let answer = rng.gen_range(1, 101);
+        let answer = rand::thread_rng().gen_range(1..=100);
 
         let mut guess = 0;
         for attempt in 1..=7 {
             loop {
-                print!("Guess #{} (1-100): ", attempt);
-                io::stdout().flush().expect("Error flushing stdout");
-
-                if let Ok(n) = read_line().parse() {
-                    if n >= 1 && n <= 100 {
+                if let Ok(n) = read_line(&format!("Guess #{} (1-100): ", attempt)).parse() {
+                    if (1..=100).contains(&n) {
                         guess = n;
                         break;
                     }
                 }
             }
 
-            if guess < answer {
-                println!("Too low.");
-            } else if guess > answer {
-                println!("Too high.");
-            } else {
-                println!("You win!");
-                break;
+            match guess.cmp(&answer) {
+                Ordering::Less => println!("Too low."),
+                Ordering::Greater => println!("Too high."),
+                Ordering::Equal => {
+                    println!("You win!");
+                    break;
+                }
             }
         }
 
@@ -48,9 +49,7 @@ fn hilo() {
             println!("You lost. The correct number was {}.", answer);
         }
 
-        print!("Would you like to play again? (y/n): ");
-        io::stdout().flush().expect("Error flushing stdout");
-        if read_line() != "y" {
+        if read_line("Would you like to play again? (y/N): ") != "y" {
             println!("Thanks for playing!");
             break;
         }

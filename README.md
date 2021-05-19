@@ -37,7 +37,7 @@ The Hi-Lo number guessing game implemented in several languages
  C++                     1           66           55            0           11
  Go                      1           62           52            0           10
  C                       1           62           51            0           11
- Rust                    1           62           51            0           11
+ Rust                    1           61           51            0           10
  Kotlin                  1           47           40            0            7
  Lua                     1           47           39            0            8
  PHP                     1           44           38            0            6
